@@ -1,13 +1,27 @@
-import styles from "./SearchBar.module.css"
+import style from "./SearchBar.module.css";
 
-function Search () {
-    return (
-        <input className={styles.Search} 
-        type="search" name="Pesquisar" 
-        id=""
-        placeholder="Buscar por Jogo" 
-        />
-    )
+function Search({ className }) {
+  return (
+    <div className={`${style.wrapper} ${className || ""}`}>
+      <svg
+        className={style.icon}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
+        <circle cx="11" cy="11" r="7" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
+
+      <input
+        className={style.Search}
+        type="search"
+        name="Pesquisar"
+        placeholder="Buscar por Jogo..."
+      />
+    </div>
+  );
 }
 
-export default Search
+export default Search;

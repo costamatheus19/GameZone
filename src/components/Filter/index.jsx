@@ -33,6 +33,7 @@ function Filtros ({ jogos }) {
             <option value="opcaoMaior">Maior Preço</option>
             <option value="opcaoMenor">Menor Preço</option>
             </select>
+
         </div>
     )
 }

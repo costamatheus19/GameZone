@@ -2,8 +2,9 @@
     width: 300px;
     border-radius: 12px;
     overflow: hidden;
-    background-color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: rgb(61, 61, 61);
+    color: rgb(0, 0, 0);
+    font-weight: bold;    
 }
 
 .imagem {
@@ -20,6 +21,9 @@
 .conteudo h2 {
     font-size: 18px;
     margin: 0 0 12px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
 }
 
 .preco {

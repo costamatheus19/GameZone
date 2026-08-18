@@ -1,6 +1,6 @@
 import styles from "./Catalogo.module.css";
 import Cabecalho from "../components/Cabecalho/index";
-import Search from "../components/SearchBar/index";
+import Search from "../components/SearchBar";
 import Filtros from "../components/Filter/index";
 import GameCard from "../components/GameCard";
 import axios from "axios";
@@ -30,9 +30,10 @@ function Catalogo() {
   return (
     <div>
       <Cabecalho />
-      <h1>Encontre seus Jogos</h1>
-      <p>Encontre seus jogos</p>
-      <Search />
+
+      <h1>Encontre Seus Jogos Aqui</h1>
+      <p>Explore Nossa Coleção de Jogos Gratuitos</p>
+      <Search className={styles.SearchLargura}/>
       <Filtros jogos={jogos} />
 
       <div className={styles.listaJogos}>
@@ -40,7 +41,6 @@ function Catalogo() {
           <GameCard key={jogo.id} jogo={jogo} />
         ))}
       </div>
-
     </div>
   );
 }

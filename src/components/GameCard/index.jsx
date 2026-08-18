@@ -18,6 +18,8 @@ function GameCard({ jogo }) {
         <p>{jogo.type}</p>
 
         <p>{jogo.platforms}</p>
+        
+        <p>{jogo.status }</p>
       </div>
     </article>
   );
