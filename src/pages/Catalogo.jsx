@@ -31,7 +31,8 @@ function Catalogo() {
     <div>
       <Cabecalho />
 
-      <h1>Encontre Seus Jogos Aqui</h1>
+      <h1 className={styles.h1}>
+        Encontre Seus Jogos Aqui</h1>
       <p>Explore Nossa Coleção de Jogos Gratuitos</p>
       <Search className={styles.SearchLargura}/>
       <Filtros jogos={jogos} />

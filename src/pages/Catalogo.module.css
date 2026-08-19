@@ -1,15 +1,19 @@
 .listaJogos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
 }
 
 .catalogo {
   width: 100%;
   box-sizing: border-box;
 }
-
+/* editando a largura do SearchBar do Catalogo */
 .SearchLargura {
-  width: 640px;
+  width: 100%;
+  max-width: 640px;
   height: 100px;
 }
+
+  
+ 

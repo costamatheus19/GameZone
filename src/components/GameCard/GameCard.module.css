@@ -1,10 +1,11 @@
 .card {
-    width: 300px;
+    width: 100%;
+    max-width: 320px; /* opcional, pra não esticar demais em telas grandes */
     border-radius: 12px;
     overflow: hidden;
     background-color: rgb(61, 61, 61);
     color: rgb(0, 0, 0);
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 .imagem {
