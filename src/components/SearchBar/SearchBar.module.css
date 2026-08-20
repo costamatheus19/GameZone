@@ -2,14 +2,15 @@
     position: relative;
     display: inline-block;
     height: 40px;
-      font-size: clamp(1rem, 0.722rem + 1.481vw, 2.5rem);
+    font-size: clamp(1rem, 0.722rem + 1.481vw, 2.5rem);
+    margin-right: 15px;
 
   }
 
   .icon {
     position: absolute;
     left: 16px;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     width: 18px;
     height: 18px;

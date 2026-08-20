@@ -1,7 +1,13 @@
 .listaJogos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
   gap: 24px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.listaJogos > * {
+  flex-shrink: 0;
+  width: 280px;
 }
 
 .catalogo {
@@ -12,7 +18,6 @@
 .SearchLargura {
   width: 100%;
   max-width: 640px;
-  height: 100px;
 }
 
   

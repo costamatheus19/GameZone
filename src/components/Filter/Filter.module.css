@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 24px;
   font-size: clamp(1rem, 0.722rem + 1.481vw, 2.5rem);
+  margin: 50px;
 }
 
 .filtro {
@@ -35,9 +36,9 @@
   margin-left: 60px;
   height: 40px;
   padding: 0 16px;
-  background-color: transparent;
+  background-color: #666;
   color: #fff;
-  border: 3px solid #6c2bd9;
+  border: 3px solid #fff;
   border-radius: 6px;
   cursor: pointer;
   font-size: 20px;
