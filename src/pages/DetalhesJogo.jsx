@@ -90,19 +90,21 @@ function Detalhes() {
             <h1>{jogo.title}</h1>
             <p>{jogo.description}</p>
 
-            <a
-              href={jogo.open_giveaway_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.jogar}
-            >
-              JOGAR
-            </a>
-            <button onClick={alternarFavorito}>
-              {favorito
-                ? "★ Remover dos favoritos"
-                : "☆ Adicionar aos favoritos"}
-            </button>
+            <div className={styles.Favoritar}>
+              <a
+                href={jogo.open_giveaway_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.jogar}
+              >
+                <h2>JOGAR</h2>
+              </a>
+              <button onClick={alternarFavorito}>
+                {favorito
+                  ? "★"
+                  : "☆"}
+              </button>
+            </div>
           </div>
         </section>
       </main>

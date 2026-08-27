@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 
 function GameCard({ jogo }) {
   return (
-    <Link to={`/jogo/${jogo.id}`}>
-      <article className={styles.card}>
+    <Link className={styles.link} to={`/jogo/${jogo.id}`}>
+  <article className={styles.card}>
         <img className={styles.imagem} src={jogo.thumbnail} alt={jogo.title} />
 
         <div className={styles.conteudo}>
           <h2>{jogo.title}</h2>
+        </div>
 
-          <p className={styles.preco}>{jogo.worth}</p>
+        <div className={styles.informacoes}>
+          <p>{jogo.worth}</p>
 
           <p>{jogo.type}</p>
 

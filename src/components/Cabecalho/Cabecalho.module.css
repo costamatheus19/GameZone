@@ -4,19 +4,27 @@
   align-items: center;
   background-color: #080218;
   width: 100%;
-  height: 85px;
+  min-height: 85px;
+  padding: 0 40px;
+  box-sizing: border-box;
+
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
   text-decoration: none;
-  font-size: clamp(1rem, 0.722rem + 1.481vw, 2.5rem);
+  font-size: 40px;
+} 
 
-  @media (max-width: 600px) {
-    .facet_sidebar {
-      display: none;
-    }
+@media (max-width: 600px) {
+  .Cabecalho {
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .h1 {
+    font-size: 1.5rem;
   }
 }
-.h1 {
-  margin-left: 40px;
-  font-size: clamp(1rem, 0.722rem + 1.481vw, 2.5rem);
-}
+

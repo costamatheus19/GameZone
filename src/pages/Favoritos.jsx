@@ -3,6 +3,7 @@ import Cabecalho from "../components/Cabecalho";
 import { buscarFavoritos, limparFavoritos } from "../utils/favoritos";
 import { useEffect, useState } from "react";
 import GameCard from "../components/GameCard";
+// import { alternarFavorito } from "./DetalhesJogo"
 
 function Favoritos() {
   const [favoritos, setFavoritos] = useState([]);

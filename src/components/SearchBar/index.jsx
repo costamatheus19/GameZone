@@ -1,6 +1,6 @@
 import style from "./SearchBar.module.css";
 
-function Search({ className }) {
+function Search({ className, value, onChange }) {
   return (
     <div className={`${style.wrapper} ${className || ""}`}>
       {/* icone de pesquisa */}
@@ -20,6 +20,8 @@ function Search({ className }) {
         type="search"
         name="Pesquisar"
         placeholder="Buscar por Jogo..."
+        onChange={onChange}
+        value={value}
       />
     </div>
   );

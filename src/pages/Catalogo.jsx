@@ -16,7 +16,7 @@ function Catalogo() {
           "https://www.gamerpower.com/api/giveaways",
         );
 
-        console.log(resposta);
+        console.log(resposta.data);
 
         setJogos(resposta.data);
       } catch (erro) {
@@ -27,17 +27,73 @@ function Catalogo() {
     buscarJogos();
   }, []);
 
+  const [busca, setBusca] = useState("");
+  const [plataforma, setPlataforma] = useState("");
+  const [tipo, setTipo] = useState("");
+  const [paginaAtual, setPaginaAtual] = useState(1);
+  const jogosPorPagina = 12;
+
+  const jogosFiltrados = jogos.filter((jogo) => {
+    const correspondeBusca = jogo.title
+      .toLowerCase()
+      .includes(busca.toLowerCase());
+
+    const correspondePlataforma =
+      plataforma === "" || jogo.platforms.includes(plataforma);
+
+    const correspondeTipo = tipo === "" || jogo.type === tipo;
+
+    return correspondeBusca && correspondePlataforma && correspondeTipo;
+  });
+
+  // PAGINAÇÃO
+  const indiceInicial = (paginaAtual - 1) * jogosPorPagina;
+  const indiceFinal = indiceInicial + jogosPorPagina;
+
+  const jogosDaPagina = jogosFiltrados.slice(indiceInicial, indiceFinal);
+
+  const totalPaginas = Math.ceil(jogosFiltrados.length / jogosPorPagina);
+
   return (
     <div>
       <Cabecalho />
-
       <h1 className={styles.h1}>Encontre Seus Jogos Aqui</h1>
       <p>Explore Nossa Coleção de Jogos Gratuitos</p>
-      <Search className={styles.SearchLargura} />
-      <Filtros jogos={jogos} />
+      <Search
+        className={styles.SearchLargura}
+        onChange={(e) => {
+          setBusca(e.target.value);
+          setPaginaAtual(1);
+        }}
+        value={busca}
+      />
+      <Filtros
+        jogos={jogos}
+        plataforma={plataforma}
+        setPlataforma={setPlataforma}
+        tipo={tipo}
+        setTipo={setTipo}
+        setPaginaAtual={setPaginaAtual}
+      />
+      <p>
+        {jogosFiltrados.length === 0
+          ? "nenhum jogo encontrado"
+          : jogosFiltrados.length + "jogos encontrados"}{" "}
+      </p>
       <div className={styles.listaJogos}>
-        {jogos.map((jogo) => (
+        {jogosDaPagina.map((jogo) => (
           <GameCard key={jogo.id} jogo={jogo} />
+        ))}
+      </div>
+      <div className={styles.paginacao}>
+        {Array.from({ length: totalPaginas }, (_, index) => (
+          <button
+            key={index + 1}
+            onClick={() => setPaginaAtual(index + 1)}
+            className={paginaAtual === index + 1 ? styles.ativo : ""}
+          >
+            {index + 1}
+          </button>
         ))}
       </div>
     </div>
@@ -45,4 +101,3 @@ function Catalogo() {
 }
 
 export default Catalogo;
-

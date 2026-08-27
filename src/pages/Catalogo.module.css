@@ -1,9 +1,12 @@
 .listaJogos {
-  display: flex;
-  gap: 24px;
+  display: grid;
+  padding-top: 10px;
   overflow-y: hidden;
   overflow-x: auto;
   scroll-behavior: smooth;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  gap: 18px;
 }
 .listaJogos > * {
   flex-shrink: 0;
@@ -20,5 +23,33 @@
   max-width: 640px;
 }
 
-  
- 
+.div p {
+  font-size: 10px;
+}
+
+  .paginacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.paginacao button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #6c2bd9;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.paginacao button:hover {
+  background-color: #6c2bd9;
+}
+
+.paginacao .ativo {
+  background-color: #6c2bd9;
+}
