@@ -12,6 +12,12 @@
   font-weight: 700;
   text-decoration: none;
   font-size: 40px;
+}
+.h1{
+  color: #a202ff;
+}
+.a {
+  color: #ffffff;
 } 
 
 @media (max-width: 600px) {

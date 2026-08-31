@@ -6,6 +6,7 @@
   gap: 24px;
   font-size: clamp(1rem, 0.722rem + 1.481vw, 2.5rem);
   margin: 50px;
+  
 }
 
 .filtro {
@@ -38,7 +39,7 @@
   padding: 0 16px;
   background-color: #666;
   color: #fff;
-  border: 3px solid #fff;
+  border: 3px solid #666;
   border-radius: 6px;
   cursor: pointer;
   font-size: 20px;

@@ -67,7 +67,7 @@ function Catalogo() {
         }}
         value={busca}
       />
-      <Filtros
+      <Filtros className={styles.filtroJogos}
         jogos={jogos}
         plataforma={plataforma}
         setPlataforma={setPlataforma}
@@ -78,9 +78,11 @@ function Catalogo() {
       <p>
         {jogosFiltrados.length === 0
           ? "nenhum jogo encontrado"
-          : jogosFiltrados.length + "jogos encontrados"}{" "}
+          : jogosFiltrados.length + " jogos encontrados"}{" "}
       </p>
       <div className={styles.listaJogos}>
+          
+
         {jogosDaPagina.map((jogo) => (
           <GameCard key={jogo.id} jogo={jogo} />
         ))}

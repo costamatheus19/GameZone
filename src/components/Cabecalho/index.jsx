@@ -5,7 +5,10 @@ function Cabecalho() {
   return (
     <header className={styles.Cabecalho}>
       {/* <img src={Logo} alt="Logo GameHub" className={styles.Logo} /> */}
-      <h1 className={styles.h1}>GAMEHUB</h1>
+      <div>
+      <a href="/" className={styles.h1}>Game</a>
+      <a href="/" className={styles.a}>Hub</a>
+      </div>
       <a href="/">Catalogo</a>
       <Link className={styles.favoritos} to="/favoritos">
         Favoritos
