@@ -64,6 +64,7 @@ function Detalhes() {
       </div>
     );
   }
+  // Função para alternar o estado de favorito
   function alternarFavorito() {
     if (favorito) {
       removerFavorito(jogo.id);

@@ -27,12 +27,14 @@ function Catalogo() {
     buscarJogos();
   }, []);
 
+  // FILTROS E PAGINAÇÃO
   const [busca, setBusca] = useState("");
   const [plataforma, setPlataforma] = useState("");
   const [tipo, setTipo] = useState("");
   const [paginaAtual, setPaginaAtual] = useState(1);
   const jogosPorPagina = 12;
 
+  // FILTROS
   const jogosFiltrados = jogos.filter((jogo) => {
     const correspondeBusca = jogo.title
       .toLowerCase()
@@ -54,6 +56,7 @@ function Catalogo() {
 
   const totalPaginas = Math.ceil(jogosFiltrados.length / jogosPorPagina);
 
+  // RENDERIZAÇÃO
   return (
     <div>
       <Cabecalho />
@@ -67,7 +70,8 @@ function Catalogo() {
         }}
         value={busca}
       />
-      <Filtros className={styles.filtroJogos}
+      <Filtros
+        className={styles.filtroJogos}
         jogos={jogos}
         plataforma={plataforma}
         setPlataforma={setPlataforma}
@@ -81,8 +85,6 @@ function Catalogo() {
           : jogosFiltrados.length + " jogos encontrados"}{" "}
       </p>
       <div className={styles.listaJogos}>
-          
-
         {jogosDaPagina.map((jogo) => (
           <GameCard key={jogo.id} jogo={jogo} />
         ))}
