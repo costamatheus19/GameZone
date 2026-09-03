@@ -9,10 +9,11 @@ function Cabecalho() {
       <a href="/" className={styles.h1}>Game</a>
       <a href="/" className={styles.a}>Hub</a>
       </div>
-      <a href="/">Catalogo</a>
+      <a href="/">Loja</a>
       <Link className={styles.favoritos} to="/favoritos">
         Favoritos
       </Link>
+      <Link to="/suporte">Suporte</Link>
       <Search />
     </header>
   );

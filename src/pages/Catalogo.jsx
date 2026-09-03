@@ -59,8 +59,11 @@ function Catalogo() {
   // RENDERIZAÇÃO
   return (
     <div>
-      <Cabecalho />
-      <h1 className={styles.h1}>Encontre Seus Jogos Aqui</h1>
+      <header>
+        <Cabecalho />
+      </header>
+      <main className={styles.main}>
+        <h1 className={styles.h1}>Encontre Seus Jogos Aqui</h1>
       <p>Explore Nossa Coleção de Jogos Gratuitos</p>
       <Search
         className={styles.SearchLargura}
@@ -100,6 +103,8 @@ function Catalogo() {
           </button>
         ))}
       </div>
+      </main>
+      
     </div>
   );
 }
