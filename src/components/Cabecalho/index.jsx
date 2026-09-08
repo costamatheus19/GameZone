@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Cabecalho() {
   return (
     <header className={styles.Cabecalho}>
-      {/* <img src={Logo} alt="Logo GameHub" className={styles.Logo} /> */}
+
       <div>
       <a href="/" className={styles.h1}>Game</a>
       <a href="/" className={styles.a}>Hub</a>
