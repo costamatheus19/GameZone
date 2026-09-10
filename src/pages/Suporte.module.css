@@ -2,18 +2,21 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 20px 35px;
+  padding: 50px 35px;
 }
 
 .container {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 15px;
+  align-items: start;
 }
 .topicos {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  text-align: flex-start;
 }
 
 .topicosSuporte ul {
@@ -33,30 +36,74 @@
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
-.perguntasEcontatos{
+.perguntasEcontatos {
   display: flex;
-  padding: 20px;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.perguntas,
+.contatos {
+  flex: 1;
+  margin: 0;
 }
 .perguntas {
+  background-color: #1d1c1c;
   display: grid;
   padding: 20px;
   border: 1px solid #333;
   border-radius: 8px;
-  justify-content: center;
-  
+  margin: 2px;
 }
 .perguntas select {
   font-size: 20px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 400px;
   padding: 10px;
-  margin: 2px
+  margin: 2px;
+  background-color: #1d1c1c;
 }
 .contatos {
   padding: 20px;
   background-color: #1d1c1c;
-  margin: 20px;
+  margin: 2px;
   border-radius: 8px;
-  width: 400px; 
+  max-width: 400px;
+}
+.contatos h3 {
+  margin: 10px;
+}
+
+.SegurancaEajuda {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.dicasSeguranca {
+  padding: 20px;
+  border: 1px solid #333;
+  justify-content: center;
+  background-color: #1d1c1c;
+  border-radius: 8px;           
+}
+
+.dicasSeguranca button,
+.precisaDeAjuda button {
+  background-color: #080218;
+  color: white;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 200px;
+}
+
+.precisaDeAjuda {
+  padding: 20px;
+  background-color: #1d1c1c;
+  border-radius: 8px;
 }
