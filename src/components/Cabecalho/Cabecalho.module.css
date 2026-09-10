@@ -19,6 +19,11 @@
 .a {
   color: #ffffff;
 } 
+.barra {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+}
 
 @media (max-width: 600px) {
   .Cabecalho {

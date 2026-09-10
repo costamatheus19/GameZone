@@ -1,6 +1,7 @@
 import styles from "./Cabecalho.module.css";
 import Search from "../SearchBar";
 import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 function Cabecalho() {
@@ -21,8 +22,16 @@ function Cabecalho() {
       <Link to="/suporte">
         Suporte
       </Link>
-
-      <Search />
+      
+      <div className={styles.barra}>
+        <div pagamentos>
+        <Link to="/Pagamentos">
+        <FaShoppingCart /> 
+        </Link>
+        </div>
+        <Search />
+      </div>
+      
     </header>
   );
 }

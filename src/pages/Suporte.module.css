@@ -10,13 +10,23 @@
   flex-direction: column;
   gap: 15px;
   align-items: start;
+  justify-items: center;
+  padding-bottom: 100px;
 }
 .topicos {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
   width: 100%;
   text-align: flex-start;
+}
+
+.topicos h2 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  font-weight: 600;
 }
 
 .topicosSuporte ul {
@@ -31,10 +41,11 @@
   flex: 1;
   background-color: #1d1c1c;
   color: white;
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
+  /* margin: 40px; */
 }
 .perguntasEcontatos {
   display: flex;
@@ -43,11 +54,6 @@
   width: 100%;
 }
 
-.perguntas,
-.contatos {
-  flex: 1;
-  margin: 0;
-}
 .perguntas {
   background-color: #1d1c1c;
   display: grid;
@@ -55,6 +61,8 @@
   border: 1px solid #333;
   border-radius: 8px;
   margin: 2px;
+  justify-content: center;
+  width: 50%;
 }
 .perguntas select {
   font-size: 20px;
@@ -70,7 +78,7 @@
   background-color: #1d1c1c;
   margin: 2px;
   border-radius: 8px;
-  max-width: 400px;
+  width: 50%;
 }
 .contatos h3 {
   margin: 10px;
@@ -87,7 +95,8 @@
   border: 1px solid #333;
   justify-content: center;
   background-color: #1d1c1c;
-  border-radius: 8px;           
+  border-radius: 8px;
+  width: 50%;
 }
 
 .dicasSeguranca button,
@@ -106,4 +115,5 @@
   padding: 20px;
   background-color: #1d1c1c;
   border-radius: 8px;
+  width: 50%;
 }
