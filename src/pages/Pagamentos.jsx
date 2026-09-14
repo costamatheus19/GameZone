@@ -23,10 +23,46 @@ function Pagamentos() {
             <li>
               <a href="">Cartão de Crédito </a>
             </li>
-            <li>Pix</li>
-            <li>Boleto</li>
-            <li>Carteira digital</li>
+            <li>
+              <a href="">pix </a>
+            </li>
+            <li>
+              <a href="">Boleto bancario </a>
+            </li>
+            <li>
+              <a href="">Carteira digital </a>
+            </li>
           </ul>
+
+          <div className={style.outrosmetodos}>
+            <div className={style.informacoesimportante}>
+              <h1>Informações importantes</h1>
+              <h2>reembolsos</h2>
+              <p>Você pode solicitar reembolso em até 7 bdias<br />
+              após a compra, conforme nossa politica.</p>
+              <br />
+              <h2>Suporte a pagamentos</h2>
+              <p>Em caso de dúvidas ou problemas com<br />
+              pagametos, entre em contato com nosso suporte.</p>
+              <br />
+              <h2>promoções e cupons</h2>
+              <p>fique atento às promoções e use cupons<br />
+              para obter especiais.</p>
+
+            </div>
+            <div className={style.seguranca}>
+              <h1>Segurança</h1>
+                <h2>Seus dados estão protegidos</h2>
+                <p>todas as transações são criptografadas<br />
+                e processadas com segurança.</p>
+                <br />
+                <p>conexão 100% segura (SSL)</p>
+                <p>Não armazenamos dados do seu cartão</p>~
+                <p>Conformidade com PCI DSS</p>
+            </div>
+          </div>
+
+          
         </div>
       </main>
     </div>

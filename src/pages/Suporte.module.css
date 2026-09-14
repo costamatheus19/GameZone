@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 30px;
   padding: 50px 35px;
+  flex: 1 1 auto;
 }
 
 .container {
@@ -11,7 +12,7 @@
   gap: 15px;
   align-items: start;
   justify-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 .topicos {
   display: flex;
@@ -29,12 +30,13 @@
   font-weight: 600;
 }
 
-.topicosSuporte ul {
+.topicosSuporte {
   display: flex;
   gap: 15px;
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .topicosSuporte li {
@@ -63,6 +65,7 @@
   margin: 2px;
   justify-content: center;
   width: 50%;
+  flex-wrap: wrap;
 }
 .perguntas select {
   font-size: 20px;
@@ -72,6 +75,8 @@
   padding: 10px;
   margin: 2px;
   background-color: #1d1c1c;
+
+  
 }
 .contatos {
   padding: 20px;
@@ -116,4 +121,53 @@
   background-color: #1d1c1c;
   border-radius: 8px;
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 30px 20px;
+  }
+
+  .container {
+    padding-bottom: 30px;
+  }
+
+  .topicos {
+    gap: 30px;
+  }
+
+  .topicosSuporte {
+    flex-direction: column;
+  }
+
+  .topicosSuporte li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+
+  .perguntasEcontatos {
+    flex-direction: column;
+  }
+
+  .perguntas,
+  .contatos {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .perguntas select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .SegurancaEajuda {
+    flex-direction: column;
+  }
+
+  .dicasSeguranca,
+  .precisaDeAjuda {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }

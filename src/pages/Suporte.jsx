@@ -5,6 +5,7 @@ import Search from "../components/SearchBar";
 import { FaGear, FaWallet, FaDownLong, FaCirclePlay, FaPhone } from "react-icons/fa6";
 import { MdOutlineReportProblem, MdMarkEmailRead } from "react-icons/md";
 
+
 function Suporte() {
   return (
     <div className={style.suporte}>
@@ -26,8 +27,8 @@ function Suporte() {
         <div className={style.topicos}>
           <h2>Topicos de Suporte</h2>
 
-          <div className={style.topicosSuporte}>
-            <ul>
+          <div>
+            <ul className={style.topicosSuporte}>
               <li>
                 <MdOutlineReportProblem fontSize={40} />
                   <br />
