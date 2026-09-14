@@ -18,6 +18,7 @@ function Pagamentos() {
           </p>
         </div>
         <div className={style.metodos}>
+          <div>
           <h1>Metodos aceitos</h1>
           <ul>
             <li>
@@ -33,7 +34,7 @@ function Pagamentos() {
               <a href="">Carteira digital </a>
             </li>
           </ul>
-
+          </div>
           <div className={style.outrosmetodos}>
             <div className={style.informacoesimportante}>
               <h1>Informações importantes</h1>
@@ -57,12 +58,11 @@ function Pagamentos() {
                 e processadas com segurança.</p>
                 <br />
                 <p>conexão 100% segura (SSL)</p>
-                <p>Não armazenamos dados do seu cartão</p>~
+                <p>Não armazenamos dados do seu cartão</p>
                 <p>Conformidade com PCI DSS</p>
             </div>
           </div>
 
-          
         </div>
       </main>
     </div>
