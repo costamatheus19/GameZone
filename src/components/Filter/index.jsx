@@ -28,7 +28,7 @@ function Filtros({
             setPaginaAtual(1);
           }}
         >
-          <option value="">Tipos</option>
+          <option value="">Todas</option>
           <option value="Game">Game</option>
           <option value="DLC">DLC</option>
         </select>
@@ -47,7 +47,7 @@ function Filtros({
             setPaginaAtual(1);
           }}
         >
-          <option value="">Plataformas</option>
+          <option value="">Todas</option>
           <option value="PC">PC</option>
           <option value="Steam">Steam</option>
           <option value="Android">Android</option>

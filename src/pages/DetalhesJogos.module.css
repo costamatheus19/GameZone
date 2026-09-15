@@ -1,7 +1,4 @@
 
-a{
-
-}
 .pai h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,11 +16,14 @@ a{
 
 .hero { 
   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+  align-items: center ;
   gap: 40px;
-  margin-top: 30px;
   padding: 30px;
-  width: 100%;
+
   box-sizing: border-box;
+  
 }
 
 .hero > div {
@@ -34,9 +34,9 @@ a{
 }
 
 .hero img {
-  height: 400px;
+  height: clamp(15.625rem, 13.75rem + 9.375vw, 25rem);
   border-radius: 10px;
-  object-fit: cover;
+  width: clamp(15.625rem, 9.813rem + 29.063vw, 44.688rem);
 }
 
 .hero h1 {
@@ -138,4 +138,5 @@ a{
   background-color: transparent;
   border: none
 }
+
 
