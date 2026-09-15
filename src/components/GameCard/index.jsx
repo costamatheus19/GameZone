@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function GameCard({ jogo }) {
   return (
+    <div className={styles.pai}>
     <Link className={styles.link} to={`/jogo/${jogo.id}`}>
       <article className={styles.card}>
         <img className={styles.imagem} src={jogo.thumbnail} alt={jogo.title} />
@@ -22,6 +23,7 @@ function GameCard({ jogo }) {
         </div>
       </article>
     </Link>
+    </div>
   );
 }
 

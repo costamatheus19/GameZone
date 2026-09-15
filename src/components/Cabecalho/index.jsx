@@ -8,7 +8,7 @@ function Cabecalho() {
   return (
     <header className={styles.Cabecalho}> 
 
-      <div>
+      <div className={styles.logo}>
         <a href="/" className={styles.h1}>Game</a>
         <a href="/" className={styles.a}>Hub</a>
       </div>

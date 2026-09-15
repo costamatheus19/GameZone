@@ -13,11 +13,17 @@
   text-decoration: none;
   font-size: 30px;
 }
-.h1{
+.logo h1{
   color: #a202ff;
 }
-.a {
-  color: #ffffff;
+.Cabecalho a {
+  color: #9e9d9d;
+  transition: all 0.2s ease;
+}
+.Cabecalho a:hover {
+  color: #a202ff;
+  background-color: transparent;
+  transform: translateY(-8px);
 } 
 .barra {
   padding: 20px;

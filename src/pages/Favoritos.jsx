@@ -27,11 +27,7 @@ function Favoritos() {
 
       <p>Todos os seus jogos favoritados estarão aqui</p>
 
-      <button
-        className={styles.limpar}
-        type="button"
-        onClick={handleLimparFavoritos}
-      >
+      <button className={styles.limpar} type="button" onClick={handleLimparFavoritos}>
         Limpar Favoritos
       </button>
 
