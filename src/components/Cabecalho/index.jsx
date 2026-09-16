@@ -10,9 +10,10 @@ function Cabecalho() {
 
       <div className={styles.logo}>
         <a href="/" className={styles.h1}>Game</a>
-        <a href="/" className={styles.a}>Hub</a>
+        <a href="/" className={styles.a}>Zone</a>
       </div>
 
+      <div className={styles.restante}>
       <a href="/">Loja</a>
 
       <Link className={styles.favoritos} to="/favoritos">
@@ -22,10 +23,10 @@ function Cabecalho() {
       <Link to="/suporte">
         Suporte
       </Link>
-      
+      </div>
       <div className={styles.barra}>
         <div pagamentos>
-        <Link to="/Pagamentos">
+        <Link to="/pagamentos">
         <FaShoppingCart /> 
         </Link>
         </div>

@@ -13,14 +13,50 @@
   text-decoration: none;
   font-size: 30px;
 }
-.logo h1{
+.logo h1 {
   color: #a202ff;
+
 }
-.Cabecalho a {
-  color: #9e9d9d;
+.restante{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #080218;
+  width: 100%;
+  min-height: 85px;
+  padding: 0 40px;
+  box-sizing: border-box;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo .a {
+  color: #a202ff;
+  transition: all 0.2s ease;
+
+
+}
+.logo .a :hover {
+  color: #fff;
+  background-color: transparent;
+  transform: translateY(-8px);background-color: transparent;
+}
+.logo .h1 {
+  color: #fffbfb;
+  transition: all 0.2s ease;
+
+}
+.logo .h1 :hover {
+  color: #a202ff;
+  background-color: transparent;
+  transform: translateY(-8px);
+}
+
+.restante a{
+  color: #fff;
   transition: all 0.2s ease;
 }
-.Cabecalho a:hover {
+.restante a:hover {
   color: #a202ff;
   background-color: transparent;
   transform: translateY(-8px);
